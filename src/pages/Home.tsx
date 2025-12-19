@@ -2,10 +2,12 @@ import { Zap, Sparkles, TrendingUp } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import VehicleInquiryForm from '../components/VehicleInquiryForm';
 import Differentials from '../components/Differentials';
+import BatterySearchCard from '../components/BatterySearchCard';
 
 export default function Home() {
   return (
     <div className="pt-20">
+      <BatterySearchCard />
       <section id="home" className="relative bg-gradient-to-br from-[#273444] via-[#1a2332] to-[#0f1620] text-white overflow-hidden">
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute -top-40 -right-40 w-80 h-80 bg-[#E43338] opacity-10 rounded-full blur-3xl"></div>
