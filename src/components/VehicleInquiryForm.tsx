@@ -24,6 +24,12 @@ export default function VehicleInquiryForm() {
     setSuccess(false);
 
     try {
+      if (!supabase) {
+        setError('Serviço temporariamente indisponível. Entre em contato diretamente.');
+        setLoading(false);
+        return;
+      }
+
       const { error: submitError } = await supabase
         .from('vehicle_inquiries')
         .insert([formData]);
