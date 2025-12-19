@@ -7,7 +7,6 @@ import BatterySearchCard from '../components/BatterySearchCard';
 export default function Home() {
   return (
     <div className="pt-20">
-      <BatterySearchCard />
       <section id="home" className="relative bg-gradient-to-br from-[#273444] via-[#1a2332] to-[#0f1620] text-white overflow-hidden">
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute -top-40 -right-40 w-80 h-80 bg-[#E43338] opacity-10 rounded-full blur-3xl"></div>
@@ -76,6 +75,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <BatterySearchCard />
 
       <section className="bg-gradient-to-r from-[#E43338] to-[#c72b30] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
