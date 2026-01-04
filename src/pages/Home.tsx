@@ -18,122 +18,110 @@ export default function Home() {
   };
 
   return (
-    <div className="pt-20">
-      <section id="home" className="relative bg-gradient-to-br from-[#273444] via-[#1a2332] to-[#0f1620] text-white overflow-hidden">
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -top-40 -right-40 w-80 h-80 bg-[#E43338] opacity-10 rounded-full blur-3xl"></div>
-          <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-[#E43338] opacity-10 rounded-full blur-3xl"></div>
-        </div>
-
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8 animate-fade-in">
+    <div className="pt-32">
+      <section id="home" className="relative bg-gray-100 overflow-hidden">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            <div className="space-y-8">
               <div className="space-y-4">
-                <div className="flex items-center space-x-2 text-[#E43338]">
-                  <Sparkles size={20} />
-                  <span className="font-semibold">Sua bateria, nosso compromisso</span>
-                </div>
-                <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-                  <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-                    A Melhor Bateria para Seu Veículo
-                  </span>
+                <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+                  <span className="text-[#1E3A8A]">PRECISA DE UMA</span><br />
+                  <span className="text-[#3B82F6]">BATERIA NOVA?</span>
                 </h1>
               </div>
 
-              <p className="text-xl md:text-2xl text-gray-300 leading-relaxed">
-                Qualidade garantida, preço justo e atendimento rápido. Encontre a bateria perfeita para seu carro em minutos.
-              </p>
+              <div className="text-lg md:text-xl text-gray-700 leading-relaxed space-y-2">
+                <p>Não se preocupe. <span className="font-bold text-[#1E3A8A]">A Vila's Baterias</span> garante o <span className="font-bold">melhor preço da região</span>. Entrega rápida e instalação grátis onde você estiver.</p>
+              </div>
 
-              <ul className="space-y-3 text-lg">
-                <li className="flex items-center space-x-3 text-gray-200">
-                  <div className="w-2 h-2 bg-[#E43338] rounded-full"></div>
-                  <span>Atendimento profissional e rápido</span>
-                </li>
-                <li className="flex items-center space-x-3 text-gray-200">
-                  <div className="w-2 h-2 bg-[#E43338] rounded-full"></div>
-                  <span>Produtos de marcas renomadas</span>
-                </li>
-                <li className="flex items-center space-x-3 text-gray-200">
-                  <div className="w-2 h-2 bg-[#E43338] rounded-full"></div>
-                  <span>Garantia estendida em todas as vendas</span>
-                </li>
-                <li className="flex items-center space-x-3 text-gray-200">
-                  <div className="w-2 h-2 bg-[#E43338] rounded-full"></div>
-                  <span>Melhor custo-benefício da região</span>
-                </li>
-              </ul>
+              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                <button
+                  onClick={handleWhatsAppContact}
+                  className="bg-[#25D366] text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-[#20BA5A] transition transform hover:scale-105 shadow-lg flex items-center justify-center space-x-3 group"
+                >
+                  <MessageCircle className="h-6 w-6" />
+                  <span>Agendar Troca Agora</span>
+                </button>
+              </div>
 
-              <div className="flex gap-4 pt-4">
-                <a href="#consulta" className="bg-[#E43338] text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#c72b30] transition transform hover:scale-105 shadow-lg">
-                  Consultar Preços
-                </a>
-                <Link to="/blog" className="border-2 border-[#E43338] text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#E43338] hover:bg-opacity-10 transition transform hover:scale-105">
-                  Ver Blog
-                </Link>
+              <div className="flex flex-wrap gap-6 pt-4">
+                <div className="flex items-center gap-3 bg-white px-6 py-3 rounded-lg shadow-md">
+                  <div className="bg-[#25D366] bg-opacity-10 p-2 rounded">
+                    <TrendingUp className="h-6 w-6 text-[#25D366]" />
+                  </div>
+                  <span className="font-bold text-[#1E3A8A]">Melhor Preço Garantido</span>
+                </div>
+                <div className="flex items-center gap-3 bg-white px-6 py-3 rounded-lg shadow-md">
+                  <div className="bg-[#2563EB] bg-opacity-10 p-2 rounded">
+                    <Sparkles className="h-6 w-6 text-[#2563EB]" />
+                  </div>
+                  <span className="font-bold text-[#1E3A8A]">Garantia Nacional</span>
+                </div>
               </div>
             </div>
 
             <div className="relative">
               <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
-                <div className="bg-gradient-to-r from-[#E43338] to-[#c72b30] px-6 py-4">
+                <div className="bg-[#2563EB] px-6 py-4">
                   <div className="flex items-center justify-center space-x-3">
                     <Search className="h-6 w-6 text-white" />
                     <h2 className="text-xl md:text-2xl font-bold text-white text-center">
-                      Encontre a Bateria Ideal para Seu Veículo
+                      ENCONTRE SUA BATERIA
                     </h2>
                   </div>
                 </div>
 
                 <div className="p-6 md:p-8">
-                  <p className="text-center text-gray-600 mb-6 text-base md:text-lg">
-                    Informe o modelo do seu carro e receba atendimento personalizado via WhatsApp
-                  </p>
-
                   <div className="space-y-4 mb-6">
                     <div>
-                      <label className="block text-sm font-semibold text-gray-700 mb-2">
-                        <Car className="inline h-4 w-4 mr-1 text-[#E43338]" />
-                        Marca do Veículo
+                      <label className="block text-sm font-bold text-[#1E3A8A] mb-2">
+                        Qual a marca do seu carro?
                       </label>
-                      <input
-                        type="text"
+                      <select
                         value={vehicleBrand}
                         onChange={(e) => setVehicleBrand(e.target.value)}
-                        placeholder="Ex: Volkswagen, Fiat, Chevrolet..."
-                        className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-[#E43338] focus:border-transparent transition text-gray-900"
-                      />
+                        className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2563EB] focus:border-transparent transition text-gray-900 bg-white"
+                      >
+                        <option value="">Selecione a marca...</option>
+                        <option value="Volkswagen">Volkswagen</option>
+                        <option value="Fiat">Fiat</option>
+                        <option value="Chevrolet">Chevrolet</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Honda">Honda</option>
+                        <option value="Toyota">Toyota</option>
+                        <option value="Hyundai">Hyundai</option>
+                        <option value="Nissan">Nissan</option>
+                        <option value="Renault">Renault</option>
+                        <option value="Jeep">Jeep</option>
+                        <option value="Outro">Outro</option>
+                      </select>
                     </div>
 
                     <div>
-                      <label className="block text-sm font-semibold text-gray-700 mb-2">
-                        <Battery className="inline h-4 w-4 mr-1 text-[#E43338]" />
-                        Modelo do Veículo
+                      <label className="block text-sm font-bold text-[#1E3A8A] mb-2">
+                        Qual o modelo?
                       </label>
                       <input
                         type="text"
                         value={vehicleModel}
                         onChange={(e) => setVehicleModel(e.target.value)}
-                        placeholder="Ex: Gol, Uno, Onix..."
-                        className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-[#E43338] focus:border-transparent transition text-gray-900"
+                        placeholder="Ex: Onix, Gol, HB20..."
+                        className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2563EB] focus:border-transparent transition text-gray-900"
                       />
                     </div>
                   </div>
 
                   <button
                     onClick={handleWhatsAppContact}
-                    className="w-full bg-[#25D366] text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-[#20BA5A] transition transform hover:scale-105 shadow-lg flex items-center justify-center space-x-3 group"
+                    className="w-full bg-[#FCD34D] text-[#1E3A8A] px-8 py-4 rounded-lg text-lg font-bold hover:bg-[#FDE047] transition transform hover:scale-105 shadow-lg flex items-center justify-center space-x-2"
                   >
-                    <MessageCircle className="h-6 w-6 group-hover:animate-bounce" />
-                    <span>Consultar Preços no WhatsApp</span>
+                    <span>VER PREÇO E MODELO</span>
+                    <span>→</span>
                   </button>
 
-                  <div className="mt-6 flex items-center justify-center space-x-2 text-sm text-gray-500">
-                    <div className="flex items-center space-x-1">
-                      <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                      <span>Atendimento rápido</span>
-                    </div>
-                    <span>•</span>
-                    <span>Resposta em minutos</span>
+                  <div className="mt-4 text-center text-sm text-gray-500">
+                    <MessageCircle className="h-4 w-4 inline mr-1" />
+                    Orçamento via WhatsApp sem compromisso
                   </div>
                 </div>
               </div>
@@ -142,7 +130,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-gradient-to-r from-[#E43338] to-[#c72b30] text-white py-16">
+      <section className="bg-gradient-to-r from-[#2563EB] to-[#1E3A8A] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
@@ -166,10 +154,10 @@ export default function Home() {
       <section className="py-20 bg-gradient-to-b from-white to-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-[#E43338] bg-opacity-10 rounded-full mb-4">
-              <TrendingUp className="h-8 w-8 text-[#E43338]" />
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-[#2563EB] bg-opacity-10 rounded-full mb-4">
+              <TrendingUp className="h-8 w-8 text-[#2563EB]" />
             </div>
-            <h2 className="text-4xl font-bold text-[#273444] mb-4">
+            <h2 className="text-4xl font-bold text-[#1E3A8A] mb-4">
               Por Que Somos Líderes
             </h2>
             <p className="text-xl text-gray-600">
@@ -181,12 +169,12 @@ export default function Home() {
             <div className="space-y-6">
               <div className="flex gap-4">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-[#E43338] text-white">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-[#2563EB] text-white">
                     <Zap size={24} />
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-[#273444] mb-2">
+                  <h3 className="text-xl font-bold text-[#1E3A8A] mb-2">
                     Instalação Express
                   </h3>
                   <p className="text-gray-600">
@@ -197,12 +185,12 @@ export default function Home() {
 
               <div className="flex gap-4">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-[#E43338] text-white">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-[#2563EB] text-white">
                     <Sparkles size={24} />
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-[#273444] mb-2">
+                  <h3 className="text-xl font-bold text-[#1E3A8A] mb-2">
                     Produtos Premium
                   </h3>
                   <p className="text-gray-600">
@@ -213,12 +201,12 @@ export default function Home() {
 
               <div className="flex gap-4">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-[#E43338] text-white">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-[#2563EB] text-white">
                     <TrendingUp size={24} />
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-[#273444] mb-2">
+                  <h3 className="text-xl font-bold text-[#1E3A8A] mb-2">
                     Melhor Preço Garantido
                   </h3>
                   <p className="text-gray-600">
@@ -241,13 +229,13 @@ export default function Home() {
 
       <Differentials />
 
-      <section className="bg-gradient-to-r from-[#273444] to-[#1a2332] text-white py-20">
+      <section className="bg-gradient-to-r from-[#1E3A8A] to-[#1E40AF] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-4">Pronto para Trocar sua Bateria?</h2>
-          <p className="text-xl text-gray-300 mb-8">
+          <p className="text-xl text-gray-100 mb-8">
             Faça uma consulta rápida e gratuita. Vamos te ajudar a encontrar a melhor solução.
           </p>
-          <a href="#consulta" className="bg-[#E43338] text-white px-10 py-4 rounded-lg text-lg font-semibold hover:bg-[#c72b30] transition transform hover:scale-105 inline-block shadow-lg">
+          <a href="#home" className="bg-[#FCD34D] text-[#1E3A8A] px-10 py-4 rounded-lg text-lg font-bold hover:bg-[#FDE047] transition transform hover:scale-105 inline-block shadow-lg">
             Consultar Agora
           </a>
         </div>

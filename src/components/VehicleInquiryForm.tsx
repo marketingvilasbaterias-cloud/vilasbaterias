@@ -64,8 +64,8 @@ export default function VehicleInquiryForm() {
     <section id="consulta" className="py-20 bg-gray-50">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <Car className="h-12 w-12 text-[#E43338] mx-auto mb-4" />
-          <h2 className="text-4xl font-bold text-[#273444] mb-4">
+          <Car className="h-12 w-12 text-[#2563EB] mx-auto mb-4" />
+          <h2 className="text-4xl font-bold text-[#1E3A8A] mb-4">
             Consulte Preços e Modelos
           </h2>
           <p className="text-xl text-gray-600">
@@ -88,7 +88,7 @@ export default function VehicleInquiryForm() {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#E43338] focus:border-transparent"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2563EB] focus:border-transparent"
                 placeholder="Seu nome"
               />
             </div>
@@ -103,7 +103,7 @@ export default function VehicleInquiryForm() {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#E43338] focus:border-transparent"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2563EB] focus:border-transparent"
                 placeholder="seu@email.com"
               />
             </div>
@@ -118,7 +118,7 @@ export default function VehicleInquiryForm() {
                 value={formData.phone}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#E43338] focus:border-transparent"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2563EB] focus:border-transparent"
                 placeholder="(00) 00000-0000"
               />
             </div>
@@ -133,7 +133,7 @@ export default function VehicleInquiryForm() {
                 value={formData.vehicle_brand}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#E43338] focus:border-transparent"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2563EB] focus:border-transparent"
                 placeholder="Ex: Volkswagen, Fiat, etc"
               />
             </div>
@@ -148,7 +148,7 @@ export default function VehicleInquiryForm() {
                 value={formData.vehicle_model}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#E43338] focus:border-transparent"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2563EB] focus:border-transparent"
                 placeholder="Ex: Gol, Uno, etc"
               />
             </div>
@@ -163,7 +163,7 @@ export default function VehicleInquiryForm() {
                 value={formData.vehicle_year}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#E43338] focus:border-transparent"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2563EB] focus:border-transparent"
                 placeholder="Ex: 2020"
               />
             </div>
@@ -178,7 +178,7 @@ export default function VehicleInquiryForm() {
               value={formData.message}
               onChange={handleChange}
               rows={4}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#E43338] focus:border-transparent"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2563EB] focus:border-transparent"
               placeholder="Informações adicionais..."
             />
           </div>
@@ -198,7 +198,7 @@ export default function VehicleInquiryForm() {
           <button
             type="submit"
             disabled={loading}
-            className="w-full bg-[#E43338] text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#c72b30] transition transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
+            className="w-full bg-[#2563EB] text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#1E40AF] transition transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
           >
             <span>{loading ? 'Enviando...' : 'Enviar Consulta'}</span>
             <Send size={20} />

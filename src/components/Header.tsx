@@ -1,4 +1,4 @@
-import { Battery, Menu, X } from 'lucide-react';
+import { Zap, Menu, X, Clock, MapPin, Phone } from 'lucide-react';
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -17,100 +17,147 @@ export default function Header() {
   const isHome = location.pathname === '/';
 
   return (
-    <header className="fixed w-full top-0 z-50 bg-white shadow-md">
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
-          <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition">
-            <Battery className="h-8 w-8 text-[#E43338]" />
-            <div className="text-2xl font-bold">
-              <span className="text-[#273444]">VILA'S</span>
-              <span className="text-[#E43338]">BATERIAS</span>
+    <header className="fixed w-full top-0 z-50">
+      <div className="bg-[#1E3A8A] text-white text-sm py-2">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-wrap justify-between items-center gap-4">
+            <div className="flex flex-wrap gap-4 md:gap-6">
+              <div className="flex items-center gap-2">
+                <Clock className="h-4 w-4" />
+                <span>Seg a Sex: 8h às 18h | Sáb: 8h às 14h</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <MapPin className="h-4 w-4" />
+                <span>Atendimento em toda Praia Grande e Região</span>
+              </div>
             </div>
-          </Link>
-
-          <div className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="text-gray-700 hover:text-[#E43338] transition font-medium">
-              Início
-            </Link>
-            {isHome && (
-              <button
-                onClick={() => scrollToSection('consulta')}
-                className="text-gray-700 hover:text-[#E43338] transition font-medium"
-              >
-                Consultar
-              </button>
-            )}
-            {isHome && (
-              <button
-                onClick={() => scrollToSection('diferenciais')}
-                className="text-gray-700 hover:text-[#E43338] transition font-medium"
-              >
-                Diferenciais
-              </button>
-            )}
-            <Link to="/blog" className="text-gray-700 hover:text-[#E43338] transition font-medium">
-              Blog
-            </Link>
-            {isHome && (
-              <button
-                onClick={() => scrollToSection('contato')}
-                className="bg-[#E43338] text-white px-6 py-2 rounded-lg hover:bg-[#c72b30] transition font-medium"
-              >
-                Contato
-              </button>
-            )}
+            <div className="text-xs md:text-sm">
+              Revenda Autorizada: Moura • Heliar • Zetta
+            </div>
           </div>
-
-          <button
-            className="md:hidden text-gray-700"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          >
-            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
         </div>
+      </div>
 
-        {mobileMenuOpen && (
-          <div className="md:hidden py-4 space-y-4 border-t">
-            <Link
-              to="/"
-              onClick={() => setMobileMenuOpen(false)}
-              className="block text-gray-700 hover:text-[#E43338] font-medium"
-            >
-              Início
+      <nav className="bg-[#2563EB] shadow-lg">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-20">
+            <Link to="/" className="flex items-center space-x-2 hover:opacity-90 transition">
+              <div className="text-3xl font-bold text-white flex items-center">
+                <span>VILA'S</span>
+                <Zap className="h-8 w-8 mx-1 fill-[#FCD34D] text-[#FCD34D]" strokeWidth={1.5} />
+                <span>BATERIAS</span>
+              </div>
             </Link>
-            {isHome && (
-              <button
-                onClick={() => scrollToSection('consulta')}
-                className="block w-full text-left text-gray-700 hover:text-[#E43338] font-medium"
-              >
-                Consultar
+
+            <div className="hidden lg:flex items-center space-x-8">
+              <Link to="/" className="text-white hover:text-[#FCD34D] transition font-semibold text-sm uppercase">
+                Início
+              </Link>
+              {isHome && (
+                <button
+                  onClick={() => scrollToSection('home')}
+                  className="text-white hover:text-[#FCD34D] transition font-semibold text-sm uppercase"
+                >
+                  Baterias
+                </button>
+              )}
+              {isHome && (
+                <button
+                  onClick={() => scrollToSection('diferenciais')}
+                  className="text-white hover:text-[#FCD34D] transition font-semibold text-sm uppercase"
+                >
+                  Serviços
+                </button>
+              )}
+              {isHome && (
+                <button
+                  onClick={() => scrollToSection('consulta')}
+                  className="text-white hover:text-[#FCD34D] transition font-semibold text-sm uppercase"
+                >
+                  Dúvidas
+                </button>
+              )}
+              <Link to="/blog" className="text-white hover:text-[#FCD34D] transition font-semibold text-sm uppercase">
+                Blog
+              </Link>
+              <button className="text-white hover:text-[#FCD34D] transition font-semibold text-sm uppercase border border-white px-4 py-2 rounded">
+                AI EDITOR
               </button>
-            )}
-            {isHome && (
-              <button
-                onClick={() => scrollToSection('diferenciais')}
-                className="block w-full text-left text-gray-700 hover:text-[#E43338] font-medium"
+            </div>
+
+            <div className="hidden lg:flex items-center gap-4">
+              <div className="text-right">
+                <div className="text-xs text-[#FCD34D] font-semibold uppercase">Emergência?</div>
+                <a href="tel:1399999999" className="text-white font-bold text-lg hover:text-[#FCD34D] transition">
+                  (13) 99999-9999
+                </a>
+              </div>
+              <a
+                href="tel:1399999999"
+                className="bg-[#FCD34D] text-[#1E3A8A] px-6 py-3 rounded-lg hover:bg-[#FDE047] transition font-bold flex items-center gap-2"
               >
-                Diferenciais
-              </button>
-            )}
-            <Link
-              to="/blog"
-              onClick={() => setMobileMenuOpen(false)}
-              className="block text-gray-700 hover:text-[#E43338] font-medium"
+                <Phone className="h-5 w-5" />
+                PEDIR AGORA
+              </a>
+            </div>
+
+            <button
+              className="lg:hidden text-white"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
-              Blog
-            </Link>
-            {isHome && (
-              <button
-                onClick={() => scrollToSection('contato')}
-                className="block w-full text-left text-gray-700 hover:text-[#E43338] font-medium"
-              >
-                Contato
-              </button>
-            )}
+              {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
           </div>
-        )}
+
+          {mobileMenuOpen && (
+            <div className="lg:hidden py-4 space-y-4 border-t border-blue-400">
+              <Link
+                to="/"
+                onClick={() => setMobileMenuOpen(false)}
+                className="block text-white hover:text-[#FCD34D] font-semibold"
+              >
+                Início
+              </Link>
+              {isHome && (
+                <button
+                  onClick={() => scrollToSection('home')}
+                  className="block w-full text-left text-white hover:text-[#FCD34D] font-semibold"
+                >
+                  Baterias
+                </button>
+              )}
+              {isHome && (
+                <button
+                  onClick={() => scrollToSection('diferenciais')}
+                  className="block w-full text-left text-white hover:text-[#FCD34D] font-semibold"
+                >
+                  Serviços
+                </button>
+              )}
+              {isHome && (
+                <button
+                  onClick={() => scrollToSection('consulta')}
+                  className="block w-full text-left text-white hover:text-[#FCD34D] font-semibold"
+                >
+                  Dúvidas
+                </button>
+              )}
+              <Link
+                to="/blog"
+                onClick={() => setMobileMenuOpen(false)}
+                className="block text-white hover:text-[#FCD34D] font-semibold"
+              >
+                Blog
+              </Link>
+              <a
+                href="tel:1399999999"
+                className="block bg-[#FCD34D] text-[#1E3A8A] px-6 py-3 rounded-lg hover:bg-[#FDE047] transition font-bold text-center"
+              >
+                PEDIR AGORA
+              </a>
+            </div>
+          )}
+        </div>
       </nav>
     </header>
   );
