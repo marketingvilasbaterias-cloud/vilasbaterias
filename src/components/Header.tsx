@@ -18,7 +18,7 @@ export default function Header() {
 
   return (
     <header className="fixed w-full top-0 z-50">
-      <div className="bg-[#1E3A8A] text-white text-sm py-2">
+      <div className="bg-[#1E3A8A] text-white text-base py-2">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap justify-between items-center gap-4">
             <div className="flex flex-wrap gap-4 md:gap-6">
@@ -31,7 +31,7 @@ export default function Header() {
                 <span>Atendimento em toda Praia Grande e Região</span>
               </div>
             </div>
-            <div className="text-xs md:text-sm">
+            <div className="text-sm md:text-base">
               Revenda Autorizada: Moura • Heliar • Zetta
             </div>
           </div>
@@ -50,13 +50,13 @@ export default function Header() {
             </Link>
 
             <div className="hidden lg:flex items-center space-x-8">
-              <Link to="/" className="text-white hover:text-[#FCD34D] transition font-semibold text-sm uppercase">
+              <Link to="/" className="text-white hover:text-[#FCD34D] transition font-semibold text-base uppercase">
                 Início
               </Link>
               {isHome && (
                 <button
                   onClick={() => scrollToSection('home')}
-                  className="text-white hover:text-[#FCD34D] transition font-semibold text-sm uppercase"
+                  className="text-white hover:text-[#FCD34D] transition font-semibold text-base uppercase"
                 >
                   Baterias
                 </button>
@@ -64,7 +64,7 @@ export default function Header() {
               {isHome && (
                 <button
                   onClick={() => scrollToSection('diferenciais')}
-                  className="text-white hover:text-[#FCD34D] transition font-semibold text-sm uppercase"
+                  className="text-white hover:text-[#FCD34D] transition font-semibold text-base uppercase"
                 >
                   Serviços
                 </button>
@@ -72,20 +72,20 @@ export default function Header() {
               {isHome && (
                 <button
                   onClick={() => scrollToSection('consulta')}
-                  className="text-white hover:text-[#FCD34D] transition font-semibold text-sm uppercase"
+                  className="text-white hover:text-[#FCD34D] transition font-semibold text-base uppercase"
                 >
                   Dúvidas
                 </button>
               )}
-              <Link to="/blog" className="text-white hover:text-[#FCD34D] transition font-semibold text-sm uppercase">
+              <Link to="/blog" className="text-white hover:text-[#FCD34D] transition font-semibold text-base uppercase">
                 Blog
               </Link>
             </div>
 
             <div className="hidden lg:flex items-center gap-4">
               <div className="text-right">
-                <div className="text-xs text-[#FCD34D] font-semibold uppercase">Emergência?</div>
-                <a href="tel:5513997228309" className="text-white font-bold text-lg hover:text-[#FCD34D] transition">
+                <div className="text-sm text-[#FCD34D] font-semibold uppercase">Emergência?</div>
+                <a href="tel:5513997228309" className="text-white font-bold text-xl hover:text-[#FCD34D] transition">
                   (13) 99722-8309
                 </a>
               </div>
