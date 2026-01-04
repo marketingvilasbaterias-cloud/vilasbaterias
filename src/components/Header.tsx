@@ -88,12 +88,14 @@ export default function Header() {
             <div className="hidden lg:flex items-center gap-4">
               <div className="text-right">
                 <div className="text-xs text-[#FCD34D] font-semibold uppercase">Emergência?</div>
-                <a href="tel:1399999999" className="text-white font-bold text-lg hover:text-[#FCD34D] transition">
-                  (13) 99999-9999
+                <a href="tel:5513997228309" className="text-white font-bold text-lg hover:text-[#FCD34D] transition">
+                  (13) 99722-8309
                 </a>
               </div>
               <a
-                href="tel:1399999999"
+                href="https://wa.me/5513997228309"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-[#FCD34D] text-[#1E3A8A] px-6 py-3 rounded-lg hover:bg-[#FDE047] transition font-bold flex items-center gap-2"
               >
                 <Phone className="h-5 w-5" />
@@ -150,7 +152,9 @@ export default function Header() {
                 Blog
               </Link>
               <a
-                href="tel:1399999999"
+                href="https://wa.me/5513997228309"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="block bg-[#FCD34D] text-[#1E3A8A] px-6 py-3 rounded-lg hover:bg-[#FDE047] transition font-bold text-center"
               >
                 PEDIR AGORA
