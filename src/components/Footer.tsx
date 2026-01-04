@@ -1,4 +1,5 @@
 import { Phone, Mail, MapPin, Clock, MessageCircle } from 'lucide-react';
+import Logo from './Logo';
 
 export default function Footer() {
   return (
@@ -7,11 +8,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <img
-                src="/image copy.png"
-                alt="Vila's Baterias"
-                className="h-12"
-              />
+              <Logo className="h-12" variant="light" />
             </div>
             <p className="text-gray-300">
               Há anos fornecendo as melhores soluções em baterias automotivas

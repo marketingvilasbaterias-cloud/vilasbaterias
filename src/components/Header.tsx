@@ -1,6 +1,7 @@
 import { Menu, X, Clock, MapPin, Phone } from 'lucide-react';
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import Logo from './Logo';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -42,11 +43,7 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <Link to="/" className="flex items-center space-x-2 hover:opacity-90 transition">
-              <img
-                src="/image copy.png"
-                alt="Vila's Baterias"
-                className="h-16"
-              />
+              <Logo className="h-16" />
             </Link>
 
             <div className="hidden lg:flex items-center space-x-8">
