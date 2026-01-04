@@ -1,4 +1,4 @@
-import { Zap, Menu, X, Clock, MapPin, Phone } from 'lucide-react';
+import { Menu, X, Clock, MapPin, Phone } from 'lucide-react';
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -18,7 +18,7 @@ export default function Header() {
 
   return (
     <header className="fixed w-full top-0 z-50">
-      <div className="bg-[#1E3A8A] text-white text-base py-2">
+      <div className="bg-[#2E7D32] text-white text-base py-2">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap justify-between items-center gap-4">
             <div className="flex flex-wrap gap-4 md:gap-6">
@@ -38,25 +38,25 @@ export default function Header() {
         </div>
       </div>
 
-      <nav className="bg-[#2563EB] shadow-lg">
+      <nav className="bg-[#E43338] shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <Link to="/" className="flex items-center space-x-2 hover:opacity-90 transition">
-              <div className="text-3xl font-bold text-white flex items-center">
-                <span>VILA'S</span>
-                <Zap className="h-8 w-8 mx-1 fill-[#FCD34D] text-[#FCD34D]" strokeWidth={1.5} />
-                <span>BATERIAS</span>
-              </div>
+              <img
+                src="/image copy.png"
+                alt="Vila's Baterias"
+                className="h-16"
+              />
             </Link>
 
             <div className="hidden lg:flex items-center space-x-8">
-              <Link to="/" className="text-white hover:text-[#FCD34D] transition font-semibold text-base uppercase">
+              <Link to="/" className="text-white hover:text-[#FFF4A3] transition font-semibold text-base uppercase">
                 Início
               </Link>
               {isHome && (
                 <button
                   onClick={() => scrollToSection('home')}
-                  className="text-white hover:text-[#FCD34D] transition font-semibold text-base uppercase"
+                  className="text-white hover:text-[#FFF4A3] transition font-semibold text-base uppercase"
                 >
                   Baterias
                 </button>
@@ -64,7 +64,7 @@ export default function Header() {
               {isHome && (
                 <button
                   onClick={() => scrollToSection('diferenciais')}
-                  className="text-white hover:text-[#FCD34D] transition font-semibold text-base uppercase"
+                  className="text-white hover:text-[#FFF4A3] transition font-semibold text-base uppercase"
                 >
                   Serviços
                 </button>
@@ -72,20 +72,20 @@ export default function Header() {
               {isHome && (
                 <button
                   onClick={() => scrollToSection('consulta')}
-                  className="text-white hover:text-[#FCD34D] transition font-semibold text-base uppercase"
+                  className="text-white hover:text-[#FFF4A3] transition font-semibold text-base uppercase"
                 >
                   Dúvidas
                 </button>
               )}
-              <Link to="/blog" className="text-white hover:text-[#FCD34D] transition font-semibold text-base uppercase">
+              <Link to="/blog" className="text-white hover:text-[#FFF4A3] transition font-semibold text-base uppercase">
                 Blog
               </Link>
             </div>
 
             <div className="hidden lg:flex items-center gap-4">
               <div className="text-right">
-                <div className="text-sm text-[#FCD34D] font-semibold uppercase">Emergência?</div>
-                <a href="tel:5513997228309" className="text-white font-bold text-xl hover:text-[#FCD34D] transition">
+                <div className="text-sm text-[#FFF4A3] font-semibold uppercase">Emergência?</div>
+                <a href="tel:5513997228309" className="text-white font-bold text-xl hover:text-[#FFF4A3] transition">
                   (13) 99722-8309
                 </a>
               </div>
@@ -93,7 +93,7 @@ export default function Header() {
                 href="https://wa.me/5513997228309"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#FCD34D] text-[#1E3A8A] px-6 py-3 rounded-lg hover:bg-[#FDE047] transition font-bold flex items-center gap-2"
+                className="bg-[#FFF4A3] text-[#2E7D32] px-6 py-3 rounded-lg hover:bg-[#FFFACD] transition font-bold flex items-center gap-2"
               >
                 <Phone className="h-5 w-5" />
                 PEDIR AGORA
@@ -109,18 +109,18 @@ export default function Header() {
           </div>
 
           {mobileMenuOpen && (
-            <div className="lg:hidden py-4 space-y-4 border-t border-blue-400">
+            <div className="lg:hidden py-4 space-y-4 border-t border-red-400">
               <Link
                 to="/"
                 onClick={() => setMobileMenuOpen(false)}
-                className="block text-white hover:text-[#FCD34D] font-semibold"
+                className="block text-white hover:text-[#FFF4A3] font-semibold"
               >
                 Início
               </Link>
               {isHome && (
                 <button
                   onClick={() => scrollToSection('home')}
-                  className="block w-full text-left text-white hover:text-[#FCD34D] font-semibold"
+                  className="block w-full text-left text-white hover:text-[#FFF4A3] font-semibold"
                 >
                   Baterias
                 </button>
@@ -128,7 +128,7 @@ export default function Header() {
               {isHome && (
                 <button
                   onClick={() => scrollToSection('diferenciais')}
-                  className="block w-full text-left text-white hover:text-[#FCD34D] font-semibold"
+                  className="block w-full text-left text-white hover:text-[#FFF4A3] font-semibold"
                 >
                   Serviços
                 </button>
@@ -136,7 +136,7 @@ export default function Header() {
               {isHome && (
                 <button
                   onClick={() => scrollToSection('consulta')}
-                  className="block w-full text-left text-white hover:text-[#FCD34D] font-semibold"
+                  className="block w-full text-left text-white hover:text-[#FFF4A3] font-semibold"
                 >
                   Dúvidas
                 </button>
@@ -144,7 +144,7 @@ export default function Header() {
               <Link
                 to="/blog"
                 onClick={() => setMobileMenuOpen(false)}
-                className="block text-white hover:text-[#FCD34D] font-semibold"
+                className="block text-white hover:text-[#FFF4A3] font-semibold"
               >
                 Blog
               </Link>
@@ -152,7 +152,7 @@ export default function Header() {
                 href="https://wa.me/5513997228309"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block bg-[#FCD34D] text-[#1E3A8A] px-6 py-3 rounded-lg hover:bg-[#FDE047] transition font-bold text-center"
+                className="block bg-[#FFF4A3] text-[#2E7D32] px-6 py-3 rounded-lg hover:bg-[#FFFACD] transition font-bold text-center"
               >
                 PEDIR AGORA
               </a>
