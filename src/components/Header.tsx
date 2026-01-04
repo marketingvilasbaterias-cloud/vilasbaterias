@@ -80,9 +80,6 @@ export default function Header() {
               <Link to="/blog" className="text-white hover:text-[#FCD34D] transition font-semibold text-sm uppercase">
                 Blog
               </Link>
-              <button className="text-white hover:text-[#FCD34D] transition font-semibold text-sm uppercase border border-white px-4 py-2 rounded">
-                AI EDITOR
-              </button>
             </div>
 
             <div className="hidden lg:flex items-center gap-4">
