@@ -26,7 +26,7 @@ export default function Home() {
               <div className="space-y-4">
                 <h1 className="text-4xl md:text-6xl font-bold leading-tight">
                   <span className="text-[#2E7D32]">PRECISA DE UMA</span><br />
-                  <span className="text-[#E43338]">BATERIA NOVA?</span>
+                  <span className="text-[#2E7D32]">BATERIA NOVA?</span>
                 </h1>
               </div>
 
@@ -52,8 +52,8 @@ export default function Home() {
                   <span className="font-bold text-[#2E7D32]">Melhor Preço Garantido</span>
                 </div>
                 <div className="flex items-center gap-3 bg-white px-6 py-3 rounded-lg shadow-md">
-                  <div className="bg-[#E43338] bg-opacity-10 p-2 rounded">
-                    <Sparkles className="h-6 w-6 text-[#E43338]" />
+                  <div className="bg-[#2E7D32] bg-opacity-10 p-2 rounded">
+                    <Sparkles className="h-6 w-6 text-[#2E7D32]" />
                   </div>
                   <span className="font-bold text-[#2E7D32]">Garantia Nacional</span>
                 </div>
@@ -62,7 +62,7 @@ export default function Home() {
 
             <div className="relative">
               <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
-                <div className="bg-[#E43338] px-6 py-4">
+                <div className="bg-[#2E7D32] px-6 py-4">
                   <div className="flex items-center justify-center space-x-3">
                     <Search className="h-6 w-6 text-white" />
                     <h2 className="text-xl md:text-2xl font-bold text-white text-center">
@@ -80,7 +80,7 @@ export default function Home() {
                       <select
                         value={vehicleBrand}
                         onChange={(e) => setVehicleBrand(e.target.value)}
-                        className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-[#E43338] focus:border-transparent transition text-gray-900 bg-white"
+                        className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2E7D32] focus:border-transparent transition text-gray-900 bg-white"
                       >
                         <option value="">Selecione a marca...</option>
                         <option value="Volkswagen">Volkswagen</option>
@@ -106,7 +106,7 @@ export default function Home() {
                         value={vehicleModel}
                         onChange={(e) => setVehicleModel(e.target.value)}
                         placeholder="Ex: Onix, Gol, HB20..."
-                        className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-[#E43338] focus:border-transparent transition text-gray-900"
+                        className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2E7D32] focus:border-transparent transition text-gray-900"
                       />
                     </div>
                   </div>
@@ -130,7 +130,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-gradient-to-r from-[#E43338] to-[#c72b30] text-white py-16">
+      <section className="bg-gradient-to-r from-[#2E7D32] to-[#1B5E20] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
@@ -154,8 +154,8 @@ export default function Home() {
       <section className="py-20 bg-gradient-to-b from-white to-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-[#E43338] bg-opacity-10 rounded-full mb-4">
-              <TrendingUp className="h-8 w-8 text-[#E43338]" />
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-[#2E7D32] bg-opacity-10 rounded-full mb-4">
+              <TrendingUp className="h-8 w-8 text-[#2E7D32]" />
             </div>
             <h2 className="text-4xl font-bold text-[#2E7D32] mb-4">
               Por Que Somos Líderes
@@ -169,7 +169,7 @@ export default function Home() {
             <div className="space-y-6">
               <div className="flex gap-4">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-[#E43338] text-white">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-[#2E7D32] text-white">
                     <Zap size={24} />
                   </div>
                 </div>
@@ -185,7 +185,7 @@ export default function Home() {
 
               <div className="flex gap-4">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-[#E43338] text-white">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-[#2E7D32] text-white">
                     <Sparkles size={24} />
                   </div>
                 </div>
@@ -201,7 +201,7 @@ export default function Home() {
 
               <div className="flex gap-4">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-[#E43338] text-white">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-[#2E7D32] text-white">
                     <TrendingUp size={24} />
                   </div>
                 </div>

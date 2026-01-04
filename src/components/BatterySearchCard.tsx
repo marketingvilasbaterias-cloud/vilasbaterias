@@ -18,7 +18,7 @@ export default function BatterySearchCard() {
     <section className="py-8 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-2xl shadow-2xl border-2 border-gray-100 overflow-hidden">
-          <div className="bg-gradient-to-r from-[#E43338] to-[#c72b30] px-6 py-4">
+          <div className="bg-gradient-to-r from-[#2E7D32] to-[#1B5E20] px-6 py-4">
             <div className="flex items-center justify-center space-x-3">
               <Search className="h-6 w-6 text-white" />
               <h2 className="text-2xl font-bold text-white text-center">
@@ -35,7 +35,7 @@ export default function BatterySearchCard() {
             <div className="grid md:grid-cols-2 gap-4 mb-6">
               <div>
                 <label className="block text-sm font-semibold text-gray-700 mb-2">
-                  <Car className="inline h-4 w-4 mr-1 text-[#E43338]" />
+                  <Car className="inline h-4 w-4 mr-1 text-[#2E7D32]" />
                   Marca do Veículo
                 </label>
                 <input
@@ -43,13 +43,13 @@ export default function BatterySearchCard() {
                   value={vehicleBrand}
                   onChange={(e) => setVehicleBrand(e.target.value)}
                   placeholder="Ex: Volkswagen, Fiat, Chevrolet..."
-                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-[#E43338] focus:border-transparent transition"
+                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2E7D32] focus:border-transparent transition"
                 />
               </div>
 
               <div>
                 <label className="block text-sm font-semibold text-gray-700 mb-2">
-                  <Battery className="inline h-4 w-4 mr-1 text-[#E43338]" />
+                  <Battery className="inline h-4 w-4 mr-1 text-[#2E7D32]" />
                   Modelo do Veículo
                 </label>
                 <input
@@ -57,7 +57,7 @@ export default function BatterySearchCard() {
                   value={vehicleModel}
                   onChange={(e) => setVehicleModel(e.target.value)}
                   placeholder="Ex: Gol, Uno, Onix..."
-                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-[#E43338] focus:border-transparent transition"
+                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2E7D32] focus:border-transparent transition"
                 />
               </div>
             </div>

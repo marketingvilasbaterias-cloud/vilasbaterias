@@ -46,8 +46,8 @@ export default function Differentials() {
               key={index}
               className="text-center p-6 rounded-xl hover:shadow-xl transition transform hover:-translate-y-2"
             >
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-[#E43338] bg-opacity-10 rounded-full mb-4">
-                <feature.icon className="h-8 w-8 text-[#E43338]" />
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-[#2E7D32] bg-opacity-10 rounded-full mb-4">
+                <feature.icon className="h-8 w-8 text-[#2E7D32]" />
               </div>
               <h3 className="text-xl font-bold text-[#2E7D32] mb-3">
                 {feature.title}
