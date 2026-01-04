@@ -42,8 +42,8 @@ export default function Header() {
       <nav className="bg-white shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
-            <Link to="/" className="flex items-center space-x-2 hover:opacity-90 transition">
-              <Logo className="h-16" />
+            <Link to="/" className="flex items-center px-3 py-2 rounded-lg hover:opacity-90 transition">
+              <Logo className="h-14" />
             </Link>
 
             <div className="hidden lg:flex items-center space-x-8">
